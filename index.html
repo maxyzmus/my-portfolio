@@ -33,7 +33,7 @@
         <div class="content-wrapper">
             <nav>
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact" id="contact-link">Contact</a></li>
@@ -58,7 +58,7 @@
                             alt="Unplugged project screenshot"></a>
                     </figure>
                     <h4>Unplugged</h4>
-                    <p class="project-description">Build a 3-page responsive website from a design comp that adapts to mobile, tablet, and desktop screens.</p>
+                    <p class="project-description">A 3-page responsive website built from a design comp that adapts to mobile, tablet, and desktop screens.</p>
                         <p><span>Skills: </span>HTML, CSS, Flexbox</p>
                         <p><span>Tools: </span>Chrome DevTools, GitHub Pages</p>
                     <a class="project-link" href="https://maxyzmus.github.io/unplugged/" target="_blank">View Project</a>
@@ -69,7 +69,7 @@
                         alt="Hotel Booking App project screenshot"></a>
                 </figure>
                 <h4>Hotel Booking App</h4>
-                <p class="project-description">Build a hotel search tool that allows you to filter the type of hotel you want to stay in.</p>
+                <p class="project-description">A hotel search tool that allows you to filter the type of hotel you want to stay in.</p>
                     <p><span>Skills: </span>ES6, JSX, Managing data flow, Manipulate the DOM</p>
                     <p><span>Tools: </span>CodeSandbox</p>
                 <a class="project-link" href="https://d8goy8.csb.app/" target="_blank">View Project</a>
@@ -80,7 +80,7 @@
                         alt="Super Sticky Notes project screenshot"></a>
                 </figure>
                 <h4>Super Sticky Notes</h4>
-                <p class="project-description">Build a sticky note app that allows you to create, edit, and delete sticky notes.</p>
+                <p class="project-description">A sticky note app that lets you create, edit, search through, and delete sticky notes.</p>
                     <p><span>Skills: </span>ES6, JSX, Managing data flow, Manipulate the DOM</p>
                     <p><span>Tools: </span>CodeSandbox</p>
                 <a class="project-link" href="https://2om3xi.csb.app/" target="_blank">View Project</a>
@@ -139,7 +139,7 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h5 class="contact-title">Email</h5>
-                    <p>contact@jordanmaximus.com</p>
+                    <p href="mailto:contact@jordanmaximus.com">contact@jordanmaximus.com</p>
                 </div>
                 <div class="contact-info follow-section">
                     <h5 class="contact-title">Follow me</h5>
@@ -149,6 +149,17 @@
                     </ul>
             </div>
         </div>
+        <div id="copyright">
+            <!-- The current year and your name will be inserted here automatically -->
+          </div>
+        <script>
+            const currentYear = new Date().getFullYear();
+            const fullName = "Jordan Scheirer";
+            const copyright =
+              "&copy; " + currentYear + " " + fullName;
+            document.getElementById("copyright")
+              .innerHTML = copyright;
+          </script>
         </div>
     </footer>
 </body>

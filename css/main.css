@@ -149,8 +149,6 @@
     font-weight: bold;
   }
   
-
-  
   .about-info h4,
   .contact-title {
     font-weight: 400;
@@ -186,6 +184,12 @@
   address {
     font-style: normal;
   }
+
+  #copyright {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+  }
   
   /* Structural Styles */
   header,
@@ -209,8 +213,6 @@
     text-align: left;
   }
   
-  /* set the margins & paddings for each section - these are only a suggestion :) */
-  /* setting all margins to zero removes all browser added default margins */
   h1,
   h2,
   h3,
@@ -224,7 +226,6 @@
     margin: 0;
   }
   
-  /* then can set the margin & paddings for any element */
   header {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -293,8 +294,9 @@
     border: 2px solid #000;
     box-shadow: 2px 2px 0px 0px #000;
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 10px 0px 10px 10px;
     background-color: #EEE4F0;
+    box-sizing: border-box;
   }
   
   #contact h3 {
@@ -380,8 +382,6 @@
     margin: 0 0 60px 0;
     padding: 10px 10px;
     color: #000;
-    border: 2px solid #000;
-    box-shadow: 2px 2px 0px 0px #000;
     border-radius: 5px;
   }
   
@@ -395,13 +395,12 @@
     border-radius: 2px;
     border: 2px solid #000;
     transform: translateY(0);
-    transition: all 0.7s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   
   .home-portfolio-piece figure:hover {
-    transform: scale(0.95);
-    filter: drop-shadow(0.95px 0.95px 0px #000);
-    transition: all 0.7s ease-in-out;
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 0px 0px #000;
   }
   
   
@@ -821,7 +820,7 @@
     }
   
     /* Footer */
-    .contact-wrapper {
+    footer .contact-wrapper {
       display: flex;
       justify-content: space-between;
     }
@@ -839,7 +838,7 @@
     }
   
     footer .social-icons {
-      width: 12.5em;
+      width: 7.5em;
       justify-content: space-between;
     }
   
