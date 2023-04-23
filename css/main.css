@@ -382,8 +382,10 @@
     margin: 0 0 60px 0;
     padding: 10px 10px;
     color: #000;
-    border-radius: 5px;
+    border-radius: 5px
   }
+      /* comment so this commit works */
+
   
   .home-portfolio-piece h4 {
     font-weight: bold;
